@@ -98,7 +98,7 @@ class Matrix:
         tex = r"\pmatrix{"
         for i in range(self.n):
             for j in range(self.p):
-                tex += str(self[i, j]) + " & "
+                tex += str(checkScalar(self[i, j])) + " & "
             tex = tex[:-2] + r" \\ "
         tex = tex[:-3] + r"}"
         return tex
